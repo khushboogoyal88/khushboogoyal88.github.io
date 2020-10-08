@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="main-nav">
+      <div id="logo"><a href="index.html">My Web</a></div>
+      <a onclick="mobileMenu()" href="#" class="icon"
+        ><i class="fas fa-bars fa-2x"></i
+      ></a>
+      <ul class="nav-items">
+        <li>
+          <a href="#">Portfolio <i class="fas fa-angle-down"></i></a>
+          <ul>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="connect.html">Connect with Me</a></li>
+        <li><a href="index.html#footer">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container conatiner-anime">
+        <div class="anime">
+          <a href="index.html">
+            <img src="http://source.unsplash.com/RitenbXBHUk" />
+          </a>
+        </div>
+        <div class="content">
+          <h1>Floating CSS animation</h1>
+          <p>Connect with me on:</p>
+          <p>
+            <span
+              ><a href="https://twitter.com/" target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i></a
+            ></span>
+            <span
+              ><a href="https://github.com/" target="_blank"
+                ><i class="fab fa-github fa-2x"></i></a
+            ></span>
+            <span
+              ><a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i></a
+            ></span>
+            <span
+              ><a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i></a
+            ></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <h2>Contact me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message to me</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <p>Copyright &copy; My Website 2020</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
